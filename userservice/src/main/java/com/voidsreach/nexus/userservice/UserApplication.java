@@ -10,12 +10,12 @@ import org.springframework.context.annotation.ComponentScan;
         "com.voidsreach.nexus.userservice",
         "com.voidsreach.nexus.commons"
 })
-public class UserService {
+public class UserApplication {
 
     public static void main(String[] args) {
         // todo sentry
-        SpringApplication.run(UserService.class, args);
-        LoggerFactory.getLogger(UserService.class).info("Nexus User Service has Started!");
+        SpringApplication.run(UserApplication.class, args);
+        LoggerFactory.getLogger(UserApplication.class).info("Nexus User Service has Started!");
     }
 
 }
