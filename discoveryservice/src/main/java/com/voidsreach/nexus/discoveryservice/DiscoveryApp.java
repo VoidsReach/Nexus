@@ -10,10 +10,10 @@ import org.springframework.context.annotation.ComponentScan;
         "com.voidsreach.nexus.discoveryservice",
         "com.voidsreach.nexus.commons"
 })
-public class DiscoveryService {
+public class DiscoveryApp {
     public static void main(String[] args) {
         // todo sentry
-        SpringApplication.run(DiscoveryService.class, args);
-        LoggerFactory.getLogger(DiscoveryService.class).info("Nexus Discovery Service has Started!");
+        SpringApplication.run(DiscoveryApp.class, args);
+        LoggerFactory.getLogger(DiscoveryApp.class).info("Nexus Discovery Service has Started!");
     }
 }

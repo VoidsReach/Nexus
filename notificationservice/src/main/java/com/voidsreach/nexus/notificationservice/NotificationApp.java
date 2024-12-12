@@ -10,12 +10,12 @@ import org.springframework.context.annotation.ComponentScan;
         "com.voidsreach.nexus.notificationservice",
         "com.voidsreach.nexus.commons"
 })
-public class NotificationService {
+public class NotificationApp {
 
     public static void main(String[] args) {
         // todo sentry
-        SpringApplication.run(NotificationService.class, args);
-        LoggerFactory.getLogger(NotificationService.class).info("Nexus Notification Service has Started!");
+        SpringApplication.run(NotificationApp.class, args);
+        LoggerFactory.getLogger(NotificationApp.class).info("Nexus Notification Service has Started!");
     }
 
 }

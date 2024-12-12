@@ -1,4 +1,4 @@
-package com.voidsreach.nexus.socialservice;
+package com.voidsreach.nexus.authservice;
 
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.SpringApplication;
@@ -7,15 +7,15 @@ import org.springframework.context.annotation.ComponentScan;
 
 @SpringBootApplication
 @ComponentScan({
-        "com.voidsreach.nexus.socialservice",
+        "com.voidsreach.nexus.authservice",
         "com.voidsreach.nexus.commons"
 })
-public class SocialService {
+public class AuthApp {
 
     public static void main(String[] args) {
-        // todo sentry
-        SpringApplication.run(SocialService.class, args);
-        LoggerFactory.getLogger(SocialService.class).info("Nexus Social Service has Started!");
+        //todo sentry
+        SpringApplication.run(AuthApp.class, args);
+        LoggerFactory.getLogger(AuthApp.class).info("Nexus Auth Service has Started!");
     }
 
 }
