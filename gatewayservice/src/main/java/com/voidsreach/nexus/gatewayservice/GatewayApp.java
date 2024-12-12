@@ -10,12 +10,12 @@ import org.springframework.context.annotation.ComponentScan;
         "com.voidsreach.nexus.gatewayservice",
         "com.voidsreach.nexus.commons"
 })
-public class GatewayService {
+public class GatewayApp {
 
     public static void main(String[] args) {
         // todo sentry
-        SpringApplication.run(GatewayService.class, args);
-        LoggerFactory.getLogger(GatewayService.class).info("Nexus Gateway Service has Started!");
+        SpringApplication.run(GatewayApp.class, args);
+        LoggerFactory.getLogger(GatewayApp.class).info("Nexus Gateway Service has Started!");
     }
 
 }
